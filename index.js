@@ -1,6 +1,6 @@
-var winSpawn = require('win-spawn')
 var path = require('path')
 var readPackage = require('read-closest-package')
+var fork = require('child_process').fork
 
 module.exports = tooler
 function tooler (cb) {
@@ -12,7 +12,10 @@ function tooler (cb) {
 
     var pkgPath = path.dirname(file)
     var script = path.resolve(pkgPath, data.tooler)
-    winSpawn(script, process.argv.slice(2), { stdio: 'inherit' })
+    fork(script, process.argv.slice(2), {
+      cwd: pkgPath,
+      stdio: 'inherit'
+    })
     cb(null)
   })
 }

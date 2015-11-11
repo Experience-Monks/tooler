@@ -10,10 +10,7 @@
     "url": "https://github.com/mattdesl"
   },
   "dependencies": {
-    "object-assign": "^4.0.1",
-    "read-closest-package": "^1.2.0",
-    "read-pkg-up": "^1.0.1",
-    "win-spawn": "^2.0.0"
+    "read-closest-package": "^1.2.0"
   },
   "devDependencies": {},
   "scripts": {
