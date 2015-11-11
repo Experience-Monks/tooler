@@ -13,7 +13,7 @@ function tooler (cb) {
     var pkgPath = path.dirname(file)
     var script = path.resolve(pkgPath, data.tooler)
     fork(script, process.argv.slice(2), {
-      cwd: pkgPath,
+      cwd: process.cwd(),
       stdio: 'inherit'
     })
     cb(null)
