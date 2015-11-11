@@ -1,0 +1,41 @@
+{
+  "name": "tooler",
+  "version": "1.0.0",
+  "description": "run a script specified in package.json",
+  "main": "index.js",
+  "license": "MIT",
+  "author": {
+    "name": "Matt DesLauriers",
+    "email": "dave.des@gmail.com",
+    "url": "https://github.com/mattdesl"
+  },
+  "dependencies": {
+    "object-assign": "^4.0.1",
+    "read-closest-package": "^1.2.0",
+    "read-pkg-up": "^1.0.1",
+    "win-spawn": "^2.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [
+    "script",
+    "package",
+    "json",
+    "script",
+    "npm",
+    "run"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Jam3/tooler.git"
+  },
+  "homepage": "https://github.com/Jam3/tooler",
+  "bugs": {
+    "url": "https://github.com/Jam3/tooler/issues"
+  },
+  "bin": {
+    "tooler": "./bin/index.js"
+  }
+}
